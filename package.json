@@ -1,11 +1,10 @@
 {
 	"dependencies": {
+		"jsrepo": "^1.23.6",
+		"radix-vue": "^1.9.12",
 		"vue": "^3.5.13"
 	},
 	"scripts": {
 		"build:registry": "jsrepo build"
-	},
-	"devDependencies": {
-		"jsrepo": "^1.23.5"
 	}
 }
