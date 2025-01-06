@@ -8,12 +8,21 @@ importers:
 
   .:
     dependencies:
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       jsrepo:
-        specifier: ^1.23.6
-        version: 1.23.6(typescript@5.7.2)
+        specifier: ^1.23.7
+        version: 1.23.7(typescript@5.7.2)
       radix-vue:
         specifier: ^1.9.12
         version: 1.9.12(vue@3.5.13(typescript@5.7.2))
+      tailwind-merge:
+        specifier: ^2.6.0
+        version: 2.6.0
+      typescript:
+        specifier: ^5.7.2
+        version: 5.7.2
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.2)
@@ -499,8 +508,8 @@ packages:
   json-schema-typed@8.0.1:
     resolution: {integrity: sha512-XQmWYj2Sm4kn4WeTYvmpKEbyPsL7nBsb647c7pMe6l02/yx2+Jfc4dT6UZkEXnIUb5LhD55r2HPsJ1milQ4rDg==}
 
-  jsrepo@1.23.6:
-    resolution: {integrity: sha512-y69F8xkkRJ7yiTHnoHvUwvKzBazfmrdR/m+mFgdXYveExrE5l2QGd70fuNEYgSr/NLIjmco0AncL+/toGhBGdQ==}
+  jsrepo@1.23.7:
+    resolution: {integrity: sha512-dkR00oCqm+B1EmYAW0YElKAWdEXNTut/CWz6FS1BbrskkKI+hG5G5InHv7jUZwnXa90ZuYHD1rwJ0imY91/4Pw==}
     hasBin: true
 
   locate-character@3.0.0:
@@ -648,9 +657,12 @@ packages:
   stubborn-fs@1.2.5:
     resolution: {integrity: sha512-H2N9c26eXjzL/S/K+i/RHHcFanE74dptvvjM8iwzwbVcWY/zjBbgRqF3K0DY4+OD+uTTASTBvDoxPDaPN02D7g==}
 
-  svelte@5.16.2:
-    resolution: {integrity: sha512-S4mKWbjv53ik1NtGuO95TC7kBA8GYBIeT9fM6y2wHdLNqdCmPXJSWLVuO7vlJZ7TUksp+6qnvqCCtWnVXeTCyw==}
+  svelte@5.16.3:
+    resolution: {integrity: sha512-6OiiZIS1tBOi3yNGf90nMorGQKlRF88lzLf4ZkU/wwrSlyKcmCwI9Ky0Kz8L3t09vTtgfqJlj1DkAr5mo9f/gw==}
     engines: {node: '>=18'}
+
+  tailwind-merge@2.6.0:
+    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -689,8 +701,8 @@ packages:
   universal-user-agent@7.0.2:
     resolution: {integrity: sha512-0JCqzSKnStlRRQfCdowvqy3cy0Dvtlb8xecj/H8JFZuCze4rwjPZQOgvFvn0Ws/usCHQFGpyr+pB9adaGwXn4Q==}
 
-  valibot@1.0.0-beta.9:
-    resolution: {integrity: sha512-yEX8gMAZ2R1yI2uwOO4NCtVnJQx36zn3vD0omzzj9FhcoblvPukENIiRZXKZwCnqSeV80bMm8wNiGhQ0S8fiww==}
+  valibot@1.0.0-beta.10:
+    resolution: {integrity: sha512-nmo3nxvXRrxwDYZznK3aTgYv7ZA/SUZJ/s+pLY4Tqsex/fgwZ9XrrQ14jjozjUaeduQ9PhXHE2Xx1uMb0HePYw==}
     peerDependencies:
       typescript: '>=5'
     peerDependenciesMeta:
@@ -1275,12 +1287,11 @@ snapshots:
 
   json-schema-typed@8.0.1: {}
 
-  jsrepo@1.23.6(typescript@5.7.2):
+  jsrepo@1.23.7(typescript@5.7.2):
     dependencies:
       '@biomejs/js-api': 0.7.1(@biomejs/wasm-nodejs@1.9.4)
       '@biomejs/wasm-nodejs': 1.9.4
       '@clack/prompts': 0.9.0
-      '@vue/compiler-sfc': 3.5.13
       ansi-regex: 6.1.0
       chalk: 5.4.1
       commander: 13.0.0
@@ -1297,10 +1308,11 @@ snapshots:
       pathe: 2.0.0
       prettier: 3.4.2
       semver: 7.6.3
-      svelte: 5.16.2
+      svelte: 5.16.3
       ts-morph: 25.0.0
-      valibot: 1.0.0-beta.9(typescript@5.7.2)
+      valibot: 1.0.0-beta.10(typescript@5.7.2)
       validate-npm-package-name: 6.0.0
+      vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
       - '@biomejs/wasm-bundler'
       - '@biomejs/wasm-web'
@@ -1434,7 +1446,7 @@ snapshots:
 
   stubborn-fs@1.2.5: {}
 
-  svelte@5.16.2:
+  svelte@5.16.3:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -1451,6 +1463,8 @@ snapshots:
       magic-string: 0.30.17
       zimmerframe: 1.1.2
 
+  tailwind-merge@2.6.0: {}
+
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
@@ -1466,8 +1480,7 @@ snapshots:
 
   type-fest@4.31.0: {}
 
-  typescript@5.7.2:
-    optional: true
+  typescript@5.7.2: {}
 
   uint8array-extras@1.4.0: {}
 
@@ -1477,7 +1490,7 @@ snapshots:
 
   universal-user-agent@7.0.2: {}
 
-  valibot@1.0.0-beta.9(typescript@5.7.2):
+  valibot@1.0.0-beta.10(typescript@5.7.2):
     optionalDependencies:
       typescript: 5.7.2
 

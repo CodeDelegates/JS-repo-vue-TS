@@ -1,0 +1,83 @@
+[
+	{
+		"name": "Accordion",
+		"blocks": [
+			{
+				"name": "Accordion",
+				"directory": "src/Accordion",
+				"category": "Accordion",
+				"tests": false,
+				"subdirectory": false,
+				"list": true,
+				"files": ["Accordion.vue"],
+				"localDependencies": [],
+				"_imports_": {},
+				"dependencies": ["radix-vue@^1.9.12"],
+				"devDependencies": []
+			},
+			{
+				"name": "AccordionContent",
+				"directory": "src/Accordion",
+				"category": "Accordion",
+				"tests": false,
+				"subdirectory": false,
+				"list": true,
+				"files": ["AccordionContent.vue"],
+				"localDependencies": ["Utils/index"],
+				"_imports_": {
+					"../Utils": "{{Utils/index}}"
+				},
+				"dependencies": ["radix-vue@^1.9.12"],
+				"devDependencies": []
+			},
+			{
+				"name": "AccordionItem",
+				"directory": "src/Accordion",
+				"category": "Accordion",
+				"tests": false,
+				"subdirectory": false,
+				"list": true,
+				"files": ["AccordionItem.vue"],
+				"localDependencies": ["Utils/index"],
+				"_imports_": {
+					"../Utils": "{{Utils/index}}"
+				},
+				"dependencies": ["radix-vue@^1.9.12"],
+				"devDependencies": []
+			},
+			{
+				"name": "AccordionTrigger",
+				"directory": "src/Accordion",
+				"category": "Accordion",
+				"tests": false,
+				"subdirectory": false,
+				"list": true,
+				"files": ["AccordionTrigger.vue"],
+				"localDependencies": ["Utils/index"],
+				"_imports_": {
+					"../Utils": "{{Utils/index}}"
+				},
+				"dependencies": ["radix-vue@^1.9.12"],
+				"devDependencies": []
+			}
+		]
+	},
+	{
+		"name": "Utils",
+		"blocks": [
+			{
+				"name": "index",
+				"directory": "src/Utils",
+				"category": "Utils",
+				"tests": false,
+				"subdirectory": false,
+				"list": true,
+				"files": ["index.ts"],
+				"localDependencies": [],
+				"_imports_": {},
+				"dependencies": ["clsx@^2.1.1", "tailwind-merge@^2.6.0"],
+				"devDependencies": []
+			}
+		]
+	}
+]
